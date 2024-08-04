@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.eye:hover path {
+  fill: black;
+}
+ 

@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'swiper/css';
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+:root {
+  --main-color: #8d4299;
+  --second-color: #ffce0c;
+}
+nav {
+  position: relative;
+}
+li.lu {
+  color: var(--main-color);
+  cursor: pointer;
+} 
+nav.logo {
+  margin-bottom: 150px;
+}
+
+ .Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+}
+/* CSS */
+input:focus {
+  outline: none; /* Remove the default focus outline */
+  border: none; /* Remove the border on focus */
+}
+.Btn::after {
+  content: "0";
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  font-size: 15px;
+  color: #8d4299;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #eee;
+  padding: 2px 8px;
+  border-radius: 5px;
+  transition: 0.2s linear;
+  top: 115%;
+} 
+
+.iconheart {
+  width: 25px;
+  height: 25px;
+  color: #8d4299;
+  transition: 0.2s linear;
+}
+
+.iconheart path {
+  fill: #8d4299;
+  transition: 0.2s linear;
+}
+
+.Btn:hover > .iconheart path {
+  fill: rgb(177, 139, 189);
+}
+@media(max-width:426px){
+  .navbar{
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .search{
+    display:none;
+  }
+}
+@media(min-width:427px){
+  .search{
+    display:flex;
+  }
+}

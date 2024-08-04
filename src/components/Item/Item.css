@@ -1,0 +1,88 @@
+/* .item .image-container {
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item .image-container .box {
+  overflow: hidden;
+  position: relative;
+}
+
+.item .image-container .box:hover img {
+  transform: rotate(0deg) scale(1.1);
+  transition: 0.3s;
+}
+@media (min-width: 768px) {
+  .item .image-container .box {
+    flex-basis: 50%;
+  }
+}
+@media (min-width: 1190px) {
+  .item .image-container .box {
+    flex-basis: 25%;
+  }
+}
+.item .image-container .img {
+  
+  transition: 0.3s;
+  
+}
+.item .image-container .caption {
+  position: absolute;
+  text-align: center;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  transition: 0.3s;
+}
+.item .image-container .caption h4 {
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.item .more {
+  color: white;
+  background-color: var(--main-color);
+  width: fit-content;
+  display: block;
+  margin: 30px auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+.item .image-container .box:hover .caption {
+  bottom: 0;
+}
+.buttonIcon {
+  font-size: 10px;
+}
+.icons {
+  display: block;
+}
+.item .image-container .box:hover .icons {
+  display: block;
+  transition: 0.3s;
+}
+.color:hover {
+  color: white;
+} */
+
+/* 
+.buttonIcon {
+  font-size: 10px;
+}
+.box .icons {
+  display: block;
+}*/
+.box:hover .icons {
+  display: block;
+  transition: 0.3s;
+}
+.color:hover {
+  color: white;
+}
+
+.background {
+  background-image: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
+}

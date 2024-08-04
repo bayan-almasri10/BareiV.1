@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #8d4299;
+  --second-color: #ffce0c;
+}
+/* .footer-container{
+  background-color: var(--main-color);
+} */
+.footer {
+  text-align: center;
+}
+.header {
+  color: var(--second-color);
+}
+
+.li,
+.about {
+  color: white;
+  margin-bottom: 0.3rem;
+
+}
+li:hover{
+   color:var(--second-color);
+   cursor: pointer;
+}
+.icon:hover.Fase{
+  color: rgb(72, 13, 235);
+}
+.icon:hover.Insta{
+  color: rgb(211, 21, 138);
+}
+.icon:hover.you{
+  color: rgb(231, 26, 26);
+}
+.icon:hover.x{
+  color: rgb(115, 75, 228);
+}
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
+}
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}
+  @media(max-width:426px){
+  .headFooter{
+      display:flex;
+      flex-direction:column;
+    }
+    .pages .{
+      display:flex;
+      flex-direction:column<;
+    }
+  }
+@media(max-width:769px){
+  .app{
+    display:flex;
+    flex-direction:column;
+  }
+    .app > a{
+      margin-bottom:0.5rem;
+    }
+    .signup{
+      display:flex;
+      flex-direction:column;
+      text-align:center;
+      /* justify-content:center; */
+    }
+    .signup .signupButtons{
+      display:flex;
+      flex-direction:column;
+      margin:auto;
+      
+    }
+     .signup .signupButtons button{
+      margin-bottom:0.5rem;
+
+     }  
+  }
